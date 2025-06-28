@@ -1,0 +1,1 @@
+export { DashboardBaymax } from "./DashboardBaymax";
