@@ -35,30 +35,22 @@ export const Layout = (): JSX.Element => {
   return (
     <div className="bg-white flex flex-row justify-center w-full">
       <div className="bg-white overflow-hidden w-[1280px] h-[832px] relative">
-        {/* Built with Bolt Badge - Bottom Left Corner */}
-        <div className="absolute bottom-[-30px] left-[20px] z-50">
+        {/* Built with Bolt Badge - Bottom Left Corner - Updated to use official circular design */}
+        <div className="absolute bottom-[0px] left-[20px] z-50">
           <a
             href="https://bolt.new"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-3 py-1.5 bg-black text-white text-xs font-medium rounded-full hover:bg-gray-800 transition-colors duration-200 shadow-lg"
+            className="block hover:scale-105 transition-transform duration-200"
           >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="text-yellow-400"
-            >
-              <path
-                d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
-                fill="currentColor"
-              />
-            </svg>
-            Built with Bolt
+            <img
+              src="/black_circle_360x360.png"
+              alt="Built with Bolt"
+              className="w-16 h-16 drop-shadow-lg"
+            />
           </a>
         </div>
+
 
         {/* 3D Baymax - Moved to FRONT with high z-index */}
         <div className="absolute w-[450px] h-[600px] top-[150px] left-1/2 transform -translate-x-1/2 z-50">
